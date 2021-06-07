@@ -2,23 +2,41 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet"  type="text/css" href="style.css">
     <title></title>
 
   </head>
   <body>
+  <div class="top" style="background-image: url(logo.png);
+  background-repeat: no-repeat;
+  background-size: cover; height: 700px; margin-top:-40px">
+
+    <h2 style="font-size:50px">Wilkommen Hier finden sie: <span></span></h2>
+</div>
+
+<div class="player">
+<div class="infos" style="float:left">
+  <img class="test" src="Wrld_on_Drugs.jpg">
+  <div class="lied">WRLD On Drugs</div>
+  <div class="Album">Album2020-Future</div>
+</div>
+
+
+  <div class="options" style="">
+    <button id="Control"><img src="rewind.png"></button>
+    <button id="Control"><img src="Play.png"></button>
+    <button id="Control"><img src="rewind_2.jpg"></button>
+  </div>
+
+</div>
+
+
 
     <button onclick="play_musik();">Play</button>
 
     <audio id="audioplayer" src="ok.mp3" controls></audio>
 
-    <script>
 
-  var audioplayer;
-  function play_musik(){
-    audioplayer = document.getElementById("audioplayer");
-    audioplayer.volume 0.5;
-    audioplayer.play();
-  }
-    </script>
+  <script src="index.js" charset="utf-8"></script>
   </body>
 </html>
