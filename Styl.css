@@ -7,6 +7,7 @@ body{
 }
 
 header{
+  width: 100%;
 }
 header img{
   display: block;
@@ -20,7 +21,7 @@ h2{
 color: white;
 position:absolute;
 top: 0;
-font-size: 30px;
+font-size: 25px;
 font-family: monospace;
 background-color:hsla(280,100%,50%,0.5);
 text-align: center;
@@ -30,6 +31,7 @@ animation: color infinite 8s;
 }
 
 .infos{
+    width: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -38,9 +40,9 @@ animation: color infinite 8s;
 
 
 .middle{
-  width: 50%;
+  width: 80%;
   min-width: 520px;
-  max-width: 700px;
+  max-width: 800px;
   height: 370px;
   margin: auto;
   background-color: black;
@@ -180,7 +182,7 @@ background-color: hsla(240,100%,50%,0.5);
 footer{
 margin-top: 50px;
   width: 100%;
-  height: 150PX;
+  height: 400PX;
   background-color: blue;
 }
 
