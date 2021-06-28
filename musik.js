@@ -43,12 +43,20 @@ function forward() {
     song.pause();
     song.currentTime =0;
     song = document.getElementById("Future");
-   song = document.getElementById("Future");
 
-    var image = document.getElementById(song[currentsong]);
+   //song = document.getElementById(song[currentsong]);
+
+    var image = document.getElementById("change");
+
     image.src = "Wrld_on_Drugs.jpg";
+    //image.src = "images[currentsong]";
+
     document.getElementById("lied").innerHTML="WRLD On Drugs";
+   //document.getElementById("lied").innerHTML="songname[currentsong]";
+
     document.getElementById("Album").innerHTML="Album2020-Future";
+     //document.getElementById("lied").innerHTML="albumArtist[currentsong]";
+
     document.getElementById("range").value =0;
     playmusic();
 
