@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Raptify</title>
+    <link rel="stylesheet" href="Styl.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+
+<header>
+<img src="logo.PNG" alt="Logo">
+
+<h2 id="top" class="top">Wilkommen Hier finden sie:<span class="a"></span></h2>
+<p class="zeit" id="zeit"></p>
+</header>
+
+
+<div class="middle">
+
+<div class="unten">
+  <img src="Wrld_on_Drugs.jpg" class="bild"alt="bild" id="change">
+
+<div class="infos">
+  <div class="lied" id="lied">WRLD On Drugs</div>
+  <div class="Album" id="Album">Album2020-Future</div>
+  </div>
+</div>
+
+
+
+<div class="re">
+<h4>Raptify</h4>
+
+
+<div class="rangebar">
+  <span id ="start" class="start" style="color:white">0:00</span>
+<input type="range" name="" value="0" min="0" max="100" step="1" id="range" onclick="range()">
+<span id="la"class="la"style="color:white">0:00</span>
+</div>
+
+<div class="rechts">
+    <button id="Control" onclick="backward()"><img src="rewind.png"></button>
+    <button id="Control" onclick="playmusic()"><img src="Play.png" id="bild"></button>
+    <button id="Control" onclick="forward()"><img src="rewind_2.jpg"></button>
+</div>
+
+<div class="h">
+
+<div class="pl">
+<div class="oben">
+  <input type="range" name="" value="5" min="0" max="10" step="1" id="r" onclick="volume()">
+    </div>
+<div class="vol">
+<button id="volume" class="volume" onclick="test()"><img id="hhh"src="volume.jpg"></button>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+
+<footer>
+  <h3 id="ok">Das ist meine Webseite welche ich in dem Fach S4F umgesetzt habe</h3>
+  <div class="links">
+    <a href="#top"><img src="pfeil.png"></a>
+  <p>Back Top?</p>
+</footer>
+
+
+<audio id="Future" autoplay hidden>
+<source src="ok.mp3">
+</audio>
+<audio id="JuiceWrld" autoplay hidden>
+<source src="Cursed.mp3">
+</audio>
+<audio id="Freebeat" autoplay hidden>
+<source src="freebeat1.mp3">
+</audio>
+
+<script type="text/javascript">
+  setInterval(zeit,1000);
+  function zeit(){
+    var datum= new Date();
+    document.getElementById('zeit').innerHTML = datum.toLocaleTimeString();
+  }
+
+</script>
+<script type="text/javascript" src="musik.js">
+</script>
+  </body>
+</html>

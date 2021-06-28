@@ -92,7 +92,7 @@ function stopAndPlayIcon() {
       var bild = document.getElementById("bild");
 if(imageplay){
 
-  bilds.src = "stop.png";
+  bild.src = "stop.png";
   imageplay =false;
 }else{
   bild.src ="Play.png";
