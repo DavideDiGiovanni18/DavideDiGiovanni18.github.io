@@ -322,7 +322,6 @@ h3{
     animation: none;
   }
 #range{-webkit-tap-highlight-color: transparent;}
-}
 input[type="range"]{
    -webkit-appearance:none;
    -webkit-border-radius:0px;
