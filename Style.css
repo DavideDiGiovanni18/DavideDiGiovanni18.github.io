@@ -303,12 +303,19 @@ h3{
     animation: fontcolor infinite 8s;
     border: 1px solid blue;
   }
+  .buttonsControl input src{
+    width: 35px;
+    height: 35px;
+  }
 
   .buttonsControl input{
     width: 35px;
     height: 35px;
     padding-right: 1px;
     padding-left: 1px;
+    -webkit-border-radius:0px;
+    -webkit-appearance: none;
+    border-radius: 0;
   }
 
   .positionVolumeButton{
