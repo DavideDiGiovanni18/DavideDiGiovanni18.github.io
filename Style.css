@@ -305,7 +305,7 @@ h3{
   }
   .buttonsControl img{
   width: 100%;
-  height: 100%;
+  height: 100px;
   flex-direction: row;
   align-items: center;
   }
