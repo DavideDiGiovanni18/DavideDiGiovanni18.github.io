@@ -317,7 +317,7 @@ h3{
     -webkit-appearance: none;
     border-radius: 0;
   }
-  .buttonsControl input:active{
+  .buttonsControl input:focus{
   border: 2px solid blue;
   }
 
