@@ -311,10 +311,24 @@ align-items: center;
   .buttonsControl button{
     width: 45px;
     height: 45px;
+    -webkit-border-radius:0px;
   }
   .positionVolumeButton{
 display: none;
+  }
 
+
+  h2{
+  color: white;
+  position:absolute;
+  top: 0;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  background-color:hsla(280,100%,50%,1);
+  text-align: center;
+  width: 100%;
+  line-height: 6rem;
+content: "hallo";
   }
 
 
