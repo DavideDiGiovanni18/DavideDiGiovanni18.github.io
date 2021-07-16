@@ -312,6 +312,9 @@ h3{
   .buttonsControl button{
     width: 35px;
     height: 35px;
+    -webkit-appearance:none;
+    -webkit-border-radius:0px;
+    border-radius:0px;
   }
 
   .positionVolumeButton{
@@ -322,9 +325,3 @@ h3{
     animation: none;
   }
 #range{-webkit-tap-highlight-color: transparent;}
-
-button{
-   -webkit-appearance:none;
-   -webkit-border-radius:0px;
-   border-radius:0px;
-}
