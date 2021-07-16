@@ -249,7 +249,7 @@ h3{
   color: white;
   position:absolute;
   top: 0;
-  font-size: 18px;
+  font-size: 20px;
   font-family: "Roboto", sans-serif;
   background-color:hsla(280,100%,50%,1);
   text-align: center;
@@ -266,6 +266,7 @@ h3{
    flex-direction:column;
    align-items: center;
    border: 5px solid white;
+   box-shadow: none;
   }
 
   .rightSidePlayer{
@@ -319,6 +320,7 @@ h3{
   .changingWord:before{
     animation: none;
   }
-#range{-webkit-tap-highlight-color: transparent}
+#range{-webkit-tap-highlight-color: transparent;
+:-webkit-slider-thumb;}
 
 }
