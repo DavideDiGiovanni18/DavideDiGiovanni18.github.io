@@ -10,7 +10,6 @@ var albumArtist = ["Album2020-Juice WRLD","Album2020-Future","Yt FreeCC"];
 var pfad = 'C:\\Users\\david\\Documents\\HTML-stuff\\Projekt\\' ;
 var currentsong =1;
 var song =document.getElementById(songs[currentsong]);
-var interval;
 
 
 
@@ -27,7 +26,7 @@ function playmusic() {
 }else {
   song.play();
   isplaying = Boolean(true);
-  interval= setInterval(time,1000);
+  setInterval(time,1000);
 }
 }
 
@@ -81,10 +80,8 @@ isplaying = Boolean(false);
 
 
 function  range(){
-  clearInterval(interval)
   var test = document.getElementById("range");
   song.currentTime= song.duration/100*test.value;
-  setInterval(time,1000);
 }
 
 function stopAndPlayIcon() {
@@ -106,7 +103,10 @@ var t =current(song.currentTime+"")
 document.getElementById("start").innerHTML =t;
 
   document.getElementById("la").innerHTML = current(song.duration);
-  document.getElementById("range").Value = Math.round(song.currentTime * 100) / 100;
+  
+  var result = ((100*song.currentTime)/song.duration);
+  document.getElementById("range").value=result;
+
   if(song.currentTime==song.duration){
     forward();
   }
