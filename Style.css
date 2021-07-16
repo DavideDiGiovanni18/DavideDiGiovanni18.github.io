@@ -322,5 +322,6 @@ input[type="text"],
 input[type="button"],
 input[type="submit"] {
      -webkit-appearance: none;
+    -webkit-border-radius:0px;
      border-radius: 0;
 }
