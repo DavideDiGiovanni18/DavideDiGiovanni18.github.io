@@ -317,6 +317,9 @@ h3{
     -webkit-appearance: none;
     border-radius: 0;
   }
+  .buttonsControl input:active{
+  border: 2px solid blue;
+  }
 
   .positionVolumeButton{
   display: none;
