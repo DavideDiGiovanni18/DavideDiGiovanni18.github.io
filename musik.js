@@ -29,7 +29,6 @@ function playmusic() {
   isplaying = Boolean(true);
   setInterval(time,1000);
   setInterval(auto,1500);
-  stopAndPlayIcon();
 }
 }
 
@@ -48,7 +47,7 @@ function forward() {
 
     var image = document.getElementById("change");
 
-    image.src = "Wrld_on_Drugs.jpg";
+    image.src = "IMG\\Wrld_on_Drugs.jpg";
     //image.src = "images[currentsong]";
 
     document.getElementById("lied").innerHTML="WRLD On Drugs";
@@ -71,7 +70,7 @@ isplaying = Boolean(false);
     song.currentTime =0;
   song = document.getElementById("JuiceWrld");
   var image = document.getElementById("change");
-  image.src = "logo.PNG";
+  image.src = "IMG\\logo.PNG";
   document.getElementById("lied").innerHTML="Cursed";
   document.getElementById("Album").innerHTML="Album2020-Juice WRLD";
  document.getElementById("range").value =0;
@@ -92,10 +91,10 @@ function stopAndPlayIcon() {
       var bild = document.getElementById("bild");
 if(imageplay){
 
-  bild.src = "stop.png";
+  bild.src = "IMG\\stop.png";
   imageplay =false;
 }else{
-  bild.src ="Play.png";
+  bild.src ="IMG\\Play.png";
 imageplay=true;
 }
 }
@@ -135,9 +134,9 @@ function volume(){
   var reglerValue= document.getElementById("r");
  song.volume =   reglerValue.value/10;
  if(reglerValue.value <=0){
-   document.getElementById("hhh").src ="nosound.png";
+   document.getElementById("hhh").src ="IMG\\nosound.png";
  }else {
-   document.getElementById("hhh").src ="volume.jpg";
+   document.getElementById("hhh").src ="IMG\\volume.jpg";
  }
 }
 
