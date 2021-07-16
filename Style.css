@@ -319,16 +319,16 @@ h3{
 #range{-webkit-tap-highlight-color: transparent;}
   
   .buttonsControl img{
-width: 200px;
-height: 200px;
+width: 100%;
+height: 100%;
 flex-direction: row;
 align-items: center;
 }
 
-input[type="text"],
+input[type="range"],
 input[type="button"],
 input[type="submit"] {
-     -webkit-appearance: none;
+    -webkit-appearance: none;
     -webkit-border-radius:0px;
      border-radius: 0;
 }
