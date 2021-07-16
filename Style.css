@@ -317,6 +317,13 @@ h3{
     animation: none;
   }
 #range{-webkit-tap-highlight-color: transparent;}
+  
+  .buttonsControl img{
+width: 200px;
+height: 200px;
+flex-direction: row;
+align-items: center;
+}
 
 input[type="text"],
 input[type="button"],
