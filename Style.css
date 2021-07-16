@@ -205,13 +205,13 @@ h3{
 
 @keyframes animate {
   0%{
-    content: 'Rap'
+    content: 'Hier finden sie: Rap'
   }
   70%{
-    content: 'Pop'
+    content: 'Hier finden sie: Pop'
   }
   100%{
-    content: 'Trap'
+    content: 'Hier finden sie: Trap'
   }
 }
 
@@ -249,26 +249,24 @@ h3{
   color: white;
   position:absolute;
   top: 0;
-  font-size: 15px;
+  font-size: 18px;
   font-family: "Roboto", sans-serif;
   background-color:hsla(280,100%,50%,1);
   text-align: center;
   width: 100%;
   line-height: 6rem;
-  animation: color infinite 8s;
   }
 
   .player{
-    border:none;
-    box-shadow: none;
     width: 320px;;
     height: 400px;
     margin: auto;
     background-color: black;
    display: flex;
    flex-direction:column;
-align-items: center;
+   align-items: center;
   }
+
   .rightSidePlayer{
     width: 100px;
     display: flex;
@@ -314,26 +312,12 @@ align-items: center;
   border-radius: 0px;
   }
   .positionVolumeButton{
-display: none;
+  display: none;
   }
 
-
-  h2{
-  color: white;
-  position:absolute;
-  top: 0;
-  font-size: 25px;
-  font-family: "Roboto", sans-serif;
-  background-color:hsla(280,100%,50%,1);
-  text-align: center;
-  width: 100%;
-  line-height: 6rem;
-te
+  .changingWord:before{
+    animation: none;
   }
-
-
-
-
 
 
 }
