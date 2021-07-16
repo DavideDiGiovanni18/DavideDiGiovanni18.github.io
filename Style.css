@@ -312,7 +312,6 @@ h3{
   .buttonsControl button{
     width: 45px;
     height: 45px;
-    -webkit-appearance: none;
    -webkit-border-radius:0px;
   }
   .positionVolumeButton{
