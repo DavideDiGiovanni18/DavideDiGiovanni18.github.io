@@ -27,7 +27,7 @@ function playmusic() {
 }else {
   song.play();
   isplaying = Boolean(true);
-   setInterval(time,1000);
+  interval= setInterval(time,1000);
 }
 }
 
@@ -81,11 +81,12 @@ isplaying = Boolean(false);
 
 
 function  range(){
+  clearInterval(interval)
   var test = document.getElementById("range");
   song.currentTime= song.duration/100*test.value;
-  time();
-  auto();
+  setInterval(time,1000);
 }
+
 function stopAndPlayIcon() {
       var bild = document.getElementById("bild");
 if(imageplay){
