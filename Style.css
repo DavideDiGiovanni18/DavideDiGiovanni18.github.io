@@ -303,10 +303,15 @@ h3{
     animation: fontcolor infinite 8s;
     border: 1px solid blue;
   }
- 
+  .buttonsControl img{
+  width: 70%;
+  height: auto;
+  flex-direction: row;
+  align-items: center;
+  }
   .buttonsControl button{
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
   }
 
   .positionVolumeButton{
@@ -317,18 +322,9 @@ h3{
     animation: none;
   }
 #range{-webkit-tap-highlight-color: transparent;}
-  
-  .buttonsControl img{
-width: 100%;
-height: 100%;
-flex-direction: row;
-align-items: center;
-}
 
-input[type="range"],
-input[type="button"],
-input[type="submit"] {
-    -webkit-appearance: none;
-    -webkit-border-radius:0px;
-     border-radius: 0;
+button{
+   -webkit-appearance:none;
+   -webkit-border-radius:0px;
+   border-radius:0px;
 }
