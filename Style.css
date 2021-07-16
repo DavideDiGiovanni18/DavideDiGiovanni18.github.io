@@ -322,7 +322,8 @@ h3{
     animation: none;
   }
 #range{-webkit-tap-highlight-color: transparent;}
-.input[type="button"]{
+
+  button{
    -webkit-appearance:none;
    -webkit-border-radius:0px;
    border-radius:0px;
