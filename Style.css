@@ -303,12 +303,7 @@ h3{
     animation: fontcolor infinite 8s;
     border: 1px solid blue;
   }
-  .buttonsControl img{
-  width: 100%;
-  height: auto;
-  flex-direction: row;
-  align-items: center;
-  }
+ 
   .buttonsControl button{
     width: 45px;
     height: 45px;
