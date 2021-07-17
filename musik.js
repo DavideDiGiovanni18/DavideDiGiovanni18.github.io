@@ -14,6 +14,7 @@ var imageplay =Boolean(true);
 var a = "hidden";
 
 
+
 function playmusic() {
     volume();
   if(isplaying){
