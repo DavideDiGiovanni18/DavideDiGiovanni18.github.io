@@ -10,9 +10,6 @@ var albumArtist = ["Album2020-Juice WRLD","Album2020-Future","Yt FreeCC"];
 var pfad = 'C:\\Users\\david\\Documents\\HTML-stuff\\Projekt\\' ;
 var currentsong =1;
 var song =document.getElementById(songs[currentsong]);
-
-
-
 var imageplay =Boolean(true);
 var a = "hidden";
 
@@ -20,18 +17,21 @@ var a = "hidden";
 function playmusic() {
     volume();
   if(isplaying){
+    imageplay = false;
       song.pause();
         isplaying = Boolean(false);
-        stopAndPlayIcon();
 }else {
   song.play();
+  imageplay = true;
   isplaying = Boolean(true);
   setInterval(time,1000);
 }
+stopAndPlayIcon();
 }
 
 
 function forward() {
+  imageplay = false;
   isplaying = Boolean(false);
   nummerStueck++;
 
@@ -55,11 +55,12 @@ function forward() {
      //document.getElementById("lied").innerHTML="albumArtist[currentsong]";
 
     document.getElementById("range").value =0;
-    playmusic();
+    stopAndPlayIcon();
 
 }
 
 function backward() {
+  imageplay = false;
 isplaying = Boolean(false);
   if(nummerStueck > 1){
     nummerStueck--;
@@ -72,9 +73,7 @@ isplaying = Boolean(false);
   document.getElementById("lied").innerHTML="Cursed";
   document.getElementById("Album").innerHTML="Album2020-Juice WRLD";
  document.getElementById("range").value =0;
-  playmusic();
-
-
+stopAndPlayIcon();
 }
 
 
@@ -85,14 +84,11 @@ function  range(){
 }
 
 function stopAndPlayIcon() {
-      var bild = document.getElementById("bild");
+      var bild = document.getElementById("ControlPlay");
 if(imageplay){
-
-  bild.src = "IMG\\stop.png";
-  imageplay =false;
+  bild.setAttribute("src","IMG\\stop.png");
 }else{
-  bild.src ="IMG\\Play.png";
-imageplay=true;
+    bild.setAttribute("src","IMG\\Play.png");
 }
 }
 
@@ -103,7 +99,7 @@ var t =current(song.currentTime+"")
 document.getElementById("start").innerHTML =t;
 
   document.getElementById("la").innerHTML = current(song.duration);
-  
+
   var result = ((100*song.currentTime)/song.duration);
   document.getElementById("range").value=result;
 
