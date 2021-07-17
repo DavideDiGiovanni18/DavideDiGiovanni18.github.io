@@ -86,7 +86,7 @@ function  range(){
 function stopAndPlayIcon() {
       var bild = document.getElementById("ControlPlay");
 if(imageplay){
-  bild.setAttribute("src","IMG\\stop.png");
+  bild.setAttribute("src","IMG\\stop.jpg");
 }else{
     bild.setAttribute("src","IMG\\Play.png");
 }
