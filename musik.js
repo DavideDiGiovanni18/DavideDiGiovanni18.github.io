@@ -51,7 +51,7 @@ function forward() {
     document.getElementById("lied").innerHTML="WRLD On Drugs";
    //document.getElementById("lied").innerHTML="songname[currentsong]";
 
-    document.getElementById("Album").innerHTML="Album2020-Future";
+    document.getElementById("album").innerHTML="Album2020-Future";
      //document.getElementById("lied").innerHTML="albumArtist[currentsong]";
 
     document.getElementById("range").value =0;
@@ -71,7 +71,7 @@ isplaying = Boolean(false);
   var image = document.getElementById("change");
   image.src = "IMG\\logo.PNG";
   document.getElementById("lied").innerHTML="Cursed";
-  document.getElementById("Album").innerHTML="Album2020-Juice WRLD";
+  document.getElementById("album").innerHTML="Album2020-Juice WRLD";
  document.getElementById("range").value =0;
 stopAndPlayIcon();
 }
