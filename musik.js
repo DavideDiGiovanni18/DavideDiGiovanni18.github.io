@@ -14,8 +14,8 @@ var imageplay =Boolean(true);
 var a = "hidden";
 
 
-
 function playmusic() {
+    document.body.style.backgroundImage = "url('IMG/setting1.jpg')";
     volume();
   if(isplaying){
     imageplay = false;
@@ -146,4 +146,10 @@ function test() {
     a = "visible";
   document.getElementById("r").style.visibility="visible";
 }
+}
+
+
+function test1(){
+  var images =["IMG/setting1.jpg","IMG/setting2.jpg","IMG/setting3.jpg","IMG/setting4.jpg"]
+  document.body.style.backgroundImage = "url('"+images[Math.floor(Math.random()*4)]+"')";
 }
