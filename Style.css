@@ -334,6 +334,10 @@ h3{
      -webkit-border-radius:0px;
      -webkit-appearance: none;
      border-radius: 0;
+     margin-left: 2px;
+   }
+   .icons{
+     padding: 10px;
    }
 
   .changingWord:before{
@@ -342,7 +346,7 @@ h3{
 #range{-webkit-tap-highlight-color: transparent;}
 
 footer{
-margin-top: 50px;
+margin-top: 60px;
 height: 250px;
 width: 100%;
 background-color: blue;
